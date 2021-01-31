@@ -28,8 +28,9 @@ public class OnAir extends Vehicle  {
         return true;
     }
     public void printInfo(){
+        super.printInfo();
         System.out.println("Airplane properties:\n"
-                + "\t - number of turbines: " + this.noTurbines + "\n");
+                + "\t - number of turbines: " + this.noTurbines);
         if (hasFirstClass) {
             System.out.println("\t - has first class \n");
         } else {

@@ -38,6 +38,7 @@ public class OnRoad extends Vehicle{
 
     @Override
     public void printInfo(){
+        super.printInfo();
         System.out.println("Driving vehicle properties:\n"
                 + "\t - number of wheels: " + this.noWheels + "\n"
                 + "\t - number of doors: " + this.noDoors + "\n");

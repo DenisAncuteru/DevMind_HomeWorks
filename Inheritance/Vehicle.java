@@ -29,13 +29,13 @@ public class Vehicle {
         return false;
     }
     public boolean addFuel(double amount){
-        System.out.println("Error: unknown type of vehicle…");
+        System.out.println("Error: unknown type of vehicle…\n");
         return false;
     }
     public void printInfo(){
         System.out.println("Vehicle properties:\n"
                 + "\t - serial number: " + this.serialNumber + "\n"
                 + "\t - capacity: " + this.noPersons + " persons\n"
-                + "\t - name: " + this.name+ "\n");
+                + "\t - name: " + this.name);
     }
 }

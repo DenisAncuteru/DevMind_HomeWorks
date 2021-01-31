@@ -34,6 +34,7 @@ public class OnWater extends Vehicle{
     }
     @Override
     public void printInfo(){
+        super.printInfo();
         System.out.println("Vessel properties:\n"
                 + "\t - number of engines: " + this.noEngines + "\n"
                 + "\t - cargo capacity: " + this.cargoCapacity + "\n");
