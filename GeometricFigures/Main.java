@@ -6,8 +6,8 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
 
-        Shape firstShape = new Shape("First Shape", "Plastic");
-        Shape secondShape = new Shape("Second Shape", "Metal");
+//        Shape firstShape = new Shape("First Shape", "Plastic");
+//        Shape secondShape = new Shape("Second Shape", "Metal");
         Triangle firstTriangle = new Triangle("First Triangle", "Carbon", 10, 7);
         Triangle secondTriangle = new Triangle("Second Triangle", "Nichel", 28, 12);
         Rectangle firstRectangle = new Rectangle("First Rectangular", "Wood", 3, 4);
@@ -21,8 +21,8 @@ public class Main {
         System.out.println(firstRectangle.hashCode());
 
         ArrayList<Shape> geometric = new ArrayList<Shape>();
-        geometric.add(firstShape);
-        geometric.add(secondShape);
+//        geometric.add(firstShape);
+//        geometric.add(secondShape);
         geometric.add(firstTriangle);
         geometric.add(secondTriangle);
         geometric.add(firstRectangle);

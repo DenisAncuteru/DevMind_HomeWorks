@@ -1,6 +1,6 @@
 package GeometricFigures;
 
-public class Shape {
+public abstract class Shape {
     private String text;
     private String material;
 
@@ -13,13 +13,9 @@ public class Shape {
         this.material = material;
     }
 
-    public void displayHeight(){
-        System.out.println("Not specific shape, no height");
-    }
+    public abstract void displayHeight();
 
-    public int getSize(){
-        return -1;
-    }
+    public abstract int getSize();
 
     @Override
     public String toString(){
