@@ -157,13 +157,13 @@ public class Main {
             case "available":
                 guestList.available();
                 break;
-            case "guest_No":
+            case "guests_no":
                 guestList.guestsNo();
                 break;
-            case "waitlist_No":
+            case "waitlist_no":
                 guestList.waitlingListNo();
                 break;
-            case "subscribe_No":
+            case "subscribe_no":
                 guestList.subscribeNo();
                 break;
             case "search":
@@ -183,58 +183,25 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
 
-//        System.out.println("Bun venit! Te rog sa introduci capacitatea evenimentului pe care doresti sa-l creezi");
-//        int eventCapacity = sc.nextInt();
-//        guestList = new GuestList(eventCapacity);
-//        System.out.println("Ce doresti sa faci in continuare?");
-//        showDefaultMenu();
-//        boolean startProgram = true;
+        System.out.println("Bun venit! Te rog sa introduci capacitatea evenimentului pe care doresti sa-l creezi");
+        int eventCapacity = sc.nextInt();
 
-//        while (startProgram){
-//            String keyword = sc.nextLine();
-//            if(keyword.equals("quit")){
-//                System.out.println("La revedere!");
-//                startProgram = false;
-//            }else{
-//                command(keyword, guestList);
-//                System.out.println("Astept o noua actiune, daca vrei sa vezi meniul poti scrie \" help \"");
-//            }
-//
-//        }
+        guestList = new GuestList(eventCapacity);
+        
+        System.out.println("Ce doresti sa faci in continuare?");
+        showDefaultMenu();
+        boolean startProgram = true;
 
-
-//       command("help",guestList);
-
-
-//        switch (keyword) ?{
-//            case "add":
-//                guestList//.add();
-//        }
-
-//        command(keyword);
-
-        GuestList event = new GuestList(3);
-        Guest guest1 = new Guest("Ancuteru","denis","denis",123234);
-        Guest guest2 = new Guest("denis","denis","denis",4123);
-        Guest guest3 = new Guest("denis","cuteanu","denis",143234);
-        Guest guest4 = new Guest("denis","denis","cutcut",1234);
-        event.add(guest1);
-        event.add(guest2);
-        event.add(guest3);
-        event.add(guest4);
-//
-//        guestList.search("cut");
-
-
-
-//        System.out.println(event.add());
-//        System.out.println(event.add());
-//        System.out.println(event.add());
-//        event.remove(1234);
-//        event.guestList();
-
-
-
+        while (startProgram){
+            String keyword = sc.nextLine();
+            if(keyword.equals("quit")){
+                System.out.println("La revedere!");
+                startProgram = false;
+            }else{
+                command(keyword, guestList);
+                System.out.println("Astept o noua actiune, daca vrei sa vezi meniul poti scrie \" help \"");
+            }
+        }
 
     }
 }
