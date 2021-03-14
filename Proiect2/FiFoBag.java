@@ -3,7 +3,6 @@ package Proiect2;
 public class FiFoBag extends AbstractBag {
 
     public FiFoBag(){
-
     }
 
     @Override

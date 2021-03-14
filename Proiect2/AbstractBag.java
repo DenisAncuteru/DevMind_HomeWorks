@@ -8,6 +8,10 @@ public abstract class AbstractBag implements IBag {
 
     private ArrayList<ISurprise> bagOfSurprises;
 
+    public AbstractBag() {
+        this.bagOfSurprises = new ArrayList<>();
+    }
+
     public ArrayList<ISurprise> getBagOfSurprises() {
 
         return bagOfSurprises;

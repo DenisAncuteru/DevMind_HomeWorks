@@ -9,15 +9,14 @@ public abstract class AbstractGiveSurprises implements IBagFactory {
     private int waitTime;
 
 
-    private AbstractGiveSurprises(String bagType, int waitTime) {
+    public AbstractGiveSurprises(String bagType, int waitTime) {
         this.bag = (AbstractBag) makeBag(bagType);
         this.waitTime = waitTime;
         
     }
 
     public IBag makeBag(String type){
-        type.toUpperCase();
-        switch(type){
+        switch( type.toUpperCase()){
             case "FIFO":
                 return new FiFoBag();
             case "LIFO":

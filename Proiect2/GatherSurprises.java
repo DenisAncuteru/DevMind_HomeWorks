@@ -6,31 +6,31 @@ import java.util.Random;
 
 public final class GatherSurprises {
 
-    private String[] surprises;
+    private ISurprise[] surprises;
     private static Random randomNumber = new Random();
 
     private GatherSurprises(){}
-    private static String generateSurprise(){
+
+    private static ISurprise generateSurprise(){
 
 
         int surpriseType = randomNumber.nextInt(3);
 
         switch(surpriseType){
             case 0:
-                return FortuneCookie.generate().toString();
+                return FortuneCookie.generate();
             case 1:
-                return Candies.generate().toString();
+                return Candies.generate();
             case 2:
-                return MinionToy.generate().toString();
+                return MinionToy.generate();
             default:
-                break;
+                return null;
         }
-        return "";
     }
 
-    public static String[] gather(int n) {
+    public static ISurprise[] gather(int n) {
 
-        String[] surprises = new String[n];
+        ISurprise[] surprises = new ISurprise[n];
         for (int i = 0; i < n; i++) {
             surprises[i] = generateSurprise();
         }
@@ -38,7 +38,7 @@ public final class GatherSurprises {
     }
 
 
-    public static String gather(){
+    public static ISurprise gather(){
         return generateSurprise();
     }
 
